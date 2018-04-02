@@ -1,2 +1,2 @@
-# publication-code
-Code to make my first author publications reproducible
+This repository contains all the code needed to reproduce figures contained
+within all of my first author publications.
