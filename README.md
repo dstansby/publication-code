@@ -1,6 +1,7 @@
 This repository contains all the code needed to reproduce figures contained
 within all of my first author publications. Each publication has it's
-own folder; see index.csv for which folder corresponds to each publication.
+own folder; see [index.csv](https://github.com/dstansby/publication-code/blob/master/index.csv)
+for which folder corresponds to each publication.
 
 All code is run on python 3.6. To run the code you will need an installation
 of [conda](https://conda.io/). When this is done, an environment can be set up
