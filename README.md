@@ -11,7 +11,6 @@ using the following shell commands:
 ```bash
 conda env create -f environment.yml --name pub-env
 source activate pub-env
-pip install -r requirements.txt
 ```
 
 All of the code is stored in jupyter notebooks. To run a notebook, just run
