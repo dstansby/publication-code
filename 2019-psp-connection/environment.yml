@@ -53,7 +53,7 @@ dependencies:
     - pandocfilters==1.4.2
     - parso==0.3.4
     - pexpect==4.6.0
-    - pfsspy==0.1.3
+    - pfsspy==0.1.5
     - pickleshare==0.7.5
     - prometheus-client==0.5.0
     - prompt-toolkit==2.0.8
@@ -77,4 +77,3 @@ dependencies:
     - webencodings==0.5.1
     - widgetsnbextension==3.4.2
 prefix: /Users/dstansby/miniconda3/envs/pub-env
-
