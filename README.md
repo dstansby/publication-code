@@ -3,7 +3,7 @@ within all of my first author publications. Each publication has it's
 own folder; see [index.csv](https://github.com/dstansby/publication-code/blob/master/index.csv)
 for which folder corresponds to each publication.
 
-All code is run on python 3.6 or python 3.7. To run the code you will need an
+To run the code you will need an
 installation of [conda](https://conda.io/). When this is done change to a
 specific publication directory, and an environment can be set up to run the code
 using the following shell commands:
