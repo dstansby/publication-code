@@ -6,8 +6,9 @@ for which folder corresponds to each publication.
 Acknowledging
 -------------
 You are free to use, re-use, and re-mix any of the code found here for your own uses. If any of
-the code contributes to a publication, I would appreciate it if you cited the corresponding paper
-that I originally wrote the code for.
+the code contributes to a publication I would appreciate it if you cited the corresponding paper
+that I originally wrote the code for, with a acknowledgement similar to
+> "This paper made use of software originally developed for Stansby et al. (year)".
 
 Running
 -------
