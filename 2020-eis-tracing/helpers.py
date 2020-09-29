@@ -31,9 +31,19 @@ def get_B_map():
     [[br, header]] = sunpy.io.fits.read('maps/mrzqs130120t0304c2132_015.fits')
     br = br - np.mean(br)
     br = np.roll(br, header['CRVAL1'], axis=1)
-    header['crval1'] = 0
+    br = np.roll(br, 180, axis=1)
+    header['crval1'] = 180
     
     return sunpy.map.Map((br, header))
+
+def get_aia_map():
+    aia_disk = sunpy.map.Map('maps/AIA20130121_1206_0193.fits')
+    aia = sunpy.map.Map('maps/carrington_aia.fits')
+    aia.plot_settings = aia_disk.plot_settings
+    # Rotate to get 0deg on the edge
+    aia.meta['crval1'] = 180
+    aia._data = np.roll(aia._data, aia._data.shape[1] // 2, 1)
+    return aia
 
 def get_gong_map():
     return read_gong_adapt('maps/adapt40311_03k012_201301200200_i00020100n1.fts', 0)
@@ -245,8 +255,8 @@ def wrap_field_line(coords):
     lines don't jump from 0 to 360 degrees on a plot.
     """
     lon = coords.lon.to_value(u.deg)
-    # We want to wrap when lon gos from < 180 to > 180
-    lon[lon > 180] -= 360
+    # We want to wrap when lon gos from > 0 to < 360
+    lon[lon > 360] -= 360
     jumps = np.where(np.abs(np.diff(lon) > 180))[0]
     if jumps.size > 0:
         jumps += 1

@@ -155,7 +155,7 @@ dependencies:
   - spiceypy=3.0.2=py_0
   - sqlalchemy=1.3.16=py38h1de35cc_0
   - sqlite=3.31.1=h5c1f38d_1
-  - sunpy=1.1.2=py38h65ad66c_0
+  - sunpy=1.1.3=py38h65ad66c_0
   - terminado=0.8.3=py38_0
   - testpath=0.4.4=py_0
   - tk=8.6.8=ha441bb4_0
@@ -177,7 +177,7 @@ dependencies:
   - zstd=1.3.7=h5bba6e5_0
   - pip:
     - cdflib==0.3.18
-    - pfsspy==0.5.0
+    - pfsspy==0.5.2
     - streamtracer==0.1.2
 prefix: /Users/dstansby/miniconda3/envs/pub-env
 
